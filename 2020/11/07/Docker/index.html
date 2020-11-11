@@ -142,10 +142,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://yoursite-url/2020/10/29/FindingPeace/">
+  <link rel="canonical" href="http://yoursite-url/2020/11/07/Docker/">
   <title>
     
-    FindingPeace - Figuring things out
+    Docker - Figuring things out
     
   </title>
 <meta name="generator" content="Hexo 4.2.1"></head>
@@ -294,7 +294,7 @@
   <style type="text/css">
     header.intro-header {
        /*post*/
-        background-image: url('/img/header_img/lml_bg.jpg');
+        background-image: url('/img/header_img/ownCloud-docker.png');
       
     }
 
@@ -319,18 +319,16 @@
           <div class="post-heading">
             <div class="tags">
               
-              <a class="tag" href="/tags/#health" title="health">health</a>
+              <a class="tag" href="/tags/#Docker" title="Docker">Docker</a>
               
-              <a class="tag" href="/tags/#peace" title="peace">peace</a>
-              
-              <a class="tag" href="/tags/#gardening" title="gardening">gardening</a>
+              <a class="tag" href="/tags/#Computing" title="Computing">Computing</a>
               
             </div>
-            <h1>FindingPeace</h1>
+            <h1>Docker</h1>
             <h2 class="subheading"></h2>
             <span class="meta">
               Posted by Rodney Hartzell on
-              2020-10-29
+              2020-11-07
             </span>
 
 
@@ -338,11 +336,11 @@
             <!-- WordCount start -->
             <div class="blank_box"></div>
             <span class="meta">
-              Estimated Reading Time <span class="post-count">1</span> Minutes
+              Estimated Reading Time <span class="post-count">3</span> Minutes
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">283</span> In Total
+              Words <span class="post-count">601</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- 不蒜子统计 start -->
@@ -402,27 +400,38 @@
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-        <h1 id="Peace-is-a-Journey"><a href="#Peace-is-a-Journey" class="headerlink" title="Peace is a Journey"></a>Peace is a Journey</h1><p>Not a day goes by when I don’t feel the pressure of a deadline. Add to that the unexpected events of life that seem to pop up at the worst of times. It is sometimes difficult to maintain perspective. Since the pandemic broke out stress seems to have gone up another notch.  With online schooling for the kids and 100% working from home for me and the wife, it feels like I live where I work and work where I live.  This is not a healthy thing. </p>
-<h2 id="Peace-in-the-Garden"><a href="#Peace-in-the-Garden" class="headerlink" title="Peace in the Garden"></a>Peace in the Garden</h2><p>One thing that has really saved the day in terms of managing stress is the awesome garden that we planted this year. It was amazing watching the plants grow and produce a bounty of fruits and vegetables. </p>
-<p><img src="last_harvest.jpg" alt="Some of the harvest"></p>
-<h3 id="Bountiful-Harvest"><a href="#Bountiful-Harvest" class="headerlink" title="Bountiful Harvest"></a>Bountiful Harvest</h3><p>So much food we hardly know what to do with it all. We canned, pickled and froze as much produce as possible. And we had so many meals of fresh cooked vegetables. I think we had ratatouille at least three times over the summer months.  Yum.</p>
-<h2 id="Media-Fear"><a href="#Media-Fear" class="headerlink" title="Media Fear"></a>Media Fear</h2><p>The other thing that seems to be crazy is how much fear is being peddled by the media. Every day it seems they report the COVID-19 statistics with obvious glee. I for one am not convinced that I really need to be afraid. Especially since it would seem that the reported deaths weren’t actually from COVID-19 but almost all had comorbidities that definitely skews the death rate back below the common flu category of diseases. So what can we do about all of that?</p>
-<h3 id="The-Cure"><a href="#The-Cure" class="headerlink" title="The Cure"></a>The Cure</h3><p><img src="media_fear.jpeg" alt="Here&#39;s some good advice"></p>
-<p>Here’s some good advice.</p>
-<p>That’s all I have for now. Thanks for reading.</p>
+        <h1 id="Learning-Docker"><a href="#Learning-Docker" class="headerlink" title="Learning Docker"></a>Learning Docker</h1><h2 id="Building-the-App’s-Container-Image"><a href="#Building-the-App’s-Container-Image" class="headerlink" title="Building the App’s Container Image"></a>Building the App’s Container Image</h2><p>In order to build the application, we need to use a Dockerfile. A Dockerfile is simply a text-based script of instructions that is used to create a container image. If you’ve created Dockerfiles before, you might see a few flaws in the Dockerfile below. But, don’t worry! We’ll go over them.</p>
+<p>Create a file named Dockerfile in the same folder as the file package.json with the following contents.</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> node:<span class="number">12</span>-alpine</span><br><span class="line"><span class="keyword">WORKDIR</span><span class="bash"> /app</span></span><br><span class="line"><span class="keyword">COPY</span><span class="bash"> . .</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> yarn install --production</span></span><br><span class="line"><span class="keyword">CMD</span><span class="bash"> [<span class="string">"node"</span>, <span class="string">"src/index.js"</span>]</span></span><br></pre></td></tr></table></figure>
+
+<p>Please check that the file Dockerfile has no file extension like .txt. Some editors may append this file extension automatically and this would result in an error in the next step.</p>
+<p>If you haven’t already done so, open a terminal and go to the app directory with the Dockerfile. Now build the container image using the docker build command.</p>
+<p><code>docker build -t getting-started .</code></p>
+<p>This command used the Dockerfile to build a new container image. You might have noticed that a lot of “layers” were downloaded. This is because we instructed the builder that we wanted to start from the node:12-alpine image. But, since we didn’t have that on our machine, that image needed to be downloaded.</p>
+<p>After the image was downloaded, we copied in our application and used yarn to install our application’s dependencies. The CMD directive specifies the default command to run when starting a container from this image.</p>
+<p>Finally, the -t flag tags our image. Think of this simply as a human-readable name for the final image. Since we named the image getting-started, we can refer to that image when we run a container.</p>
+<p>The . at the end of the docker build command tells that Docker should look for the Dockerfile in the current directory.</p>
+<h2 id="Starting-an-App-Container"><a href="#Starting-an-App-Container" class="headerlink" title="Starting an App Container"></a>Starting an App Container</h2><p>Now that we have an image, let’s run the application! To do so, we will use the docker run command (remember that from earlier?).</p>
+<p>Start your container using the docker run command and specify the name of the image we just created:</p>
+<p><code>docker run -dp 3000:3000 getting-started</code></p>
+<p>Remember the -d and -p flags? We’re running the new container in “detached” mode (in the background) and creating a mapping between the host’s port 3000 to the container’s port 3000. Without the port mapping, we wouldn’t be able to access the application.</p>
+<p>After a few seconds, open your web browser to <a href="http://localhost:3000" target="_blank" rel="noopener">http://localhost:3000</a>. You should see our app!</p>
+<p>Empty Todo List</p>
+<p>Go ahead and add an item or two and see that it works as you expect. You can mark items as complete and remove items. Your frontend is successfully storing items in the backend! Pretty quick and easy, huh?</p>
+<p>At this point, you should have a running todo list manager with a few items, all built by you! Now, let’s make a few changes and learn about managing our containers.</p>
+<p>If you take a quick look at the Docker Dashboard, you should see your two containers running now (this tutorial and your freshly launched app container)!</p>
+<p>Docker Dashboard with tutorial and app containers running</p>
+<h2 id="Recap"><a href="#Recap" class="headerlink" title="Recap"></a>Recap</h2><p>In this short section, we learned the very basics about building a container image and created a Dockerfile to do so. Once we built an image, we started the container and saw the running app!</p>
+<p>Next, we’re going to make a modification to our app and learn how to update our running application with a new image. Along the way, we’ll learn a few other useful commands.</p>
 
 
         <hr>
         <!-- Pager -->
         <ul class="pager">
           
-          <li class="previous">
-            <a href="/2020/10/29/BrandNewPost/" data-toggle="tooltip" data-placement="top" title="BrandNewPost">&larr; Previous Post</a>
-          </li>
-          
           
           <li class="next">
-            <a href="/2020/04/17/Hexo-Theme-LiveMyLife/" data-toggle="tooltip" data-placement="top" title="Hexo-Theme-LiveMyLife">Next Post &rarr;</a>
+            <a href="/2020/10/29/BrandNewPost/" data-toggle="tooltip" data-placement="top" title="BrandNewPost">Next Post &rarr;</a>
           </li>
           
         </ul>
@@ -465,7 +474,7 @@
       </a>
     </li>
     <li class="social-share-li">
-      <a target="_blank" class="social-share-icon" href="mailto:?subject=FindingPeace&body=Hi,I found this website and thought you might like it http://yoursite-url/2020/10/29/FindingPeace/">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=Docker&body=Hi,I found this website and thought you might like it http://yoursite-url/2020/11/07/Docker/">
         <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
       </a>
     </li>
@@ -498,7 +507,7 @@
     repo: '',
     owner: '',
     admin: '',
-    id: 'Thu Oct 29 2020 17:06:07 GMT-0500', // Ensure uniqueness and length less than 50
+    id: 'Sat Nov 07 2020 12:13:47 GMT-0600', // Ensure uniqueness and length less than 50
     distractionFreeMode: false, // Facebook-like distraction free mode
     perPage: 10 ,
     pagerDirection: 'last',
@@ -569,7 +578,7 @@
   }
 
   const gitment = new Gitment({
-    id: 'Thu Oct 29 2020 17:06:07 GMT-0500', // optional
+    id: 'Sat Nov 07 2020 12:13:47 GMT-0600', // optional
     owner: 'rhartzell',
     repo: 'hexo-blog-comments',
     oauth: {
@@ -607,7 +616,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Peace-is-a-Journey"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Peace is a Journey</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Peace-in-the-Garden"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">Peace in the Garden</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Bountiful-Harvest"><span class="toc-nav-number">1.1.1.</span> <span class="toc-nav-text">Bountiful Harvest</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Media-Fear"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">Media Fear</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#The-Cure"><span class="toc-nav-number">1.2.1.</span> <span class="toc-nav-text">The Cure</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Learning-Docker"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Learning Docker</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Building-the-App’s-Container-Image"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">Building the App’s Container Image</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Starting-an-App-Container"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">Starting an App Container</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Recap"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">Recap</span></a></li></ol></li></ol>
         
         </div>
       </aside>
@@ -629,11 +638,9 @@
           </h5>
           <div class="tags">
             
-            <a class="tag" href="/tags/#health" title="health">health</a>
+            <a class="tag" href="/tags/#Docker" title="Docker">Docker</a>
             
-            <a class="tag" href="/tags/#peace" title="peace">peace</a>
-            
-            <a class="tag" href="/tags/#gardening" title="gardening">gardening</a>
+            <a class="tag" href="/tags/#Computing" title="Computing">Computing</a>
             
           </div>
         </section>
