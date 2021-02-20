@@ -2,63 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite-url/2020/11/07/Docker/</loc>
+    <loc>http://localhost/hexo/2020/11/07/Docker/</loc>
     
-    <lastmod>2020-11-07</lastmod>
+    <lastmod>2020-12-10</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite-url/2020/10/29/BrandNewPost/</loc>
+    <loc>http://localhost/hexo/2020/10/29/BrandNewPost/</loc>
     
     <lastmod>2020-11-02</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite-url/2020/10/29/FindingPeace/</loc>
+    <loc>http://localhost/hexo/2020/10/29/FindingPeace/</loc>
     
     <lastmod>2020-10-29</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/index.html</loc>
+    <loc>http://localhost/hexo/tags/index.html</loc>
     
     <lastmod>2020-10-29</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite-url/categories/index.html</loc>
+    <loc>http://localhost/hexo/categories/index.html</loc>
     
     <lastmod>2020-10-29</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite-url/about/index.html</loc>
+    <loc>http://localhost/hexo/about/index.html</loc>
     
     <lastmod>2020-10-29</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite-url/archive/index.html</loc>
+    <loc>http://localhost/hexo/archive/index.html</loc>
     
     <lastmod>2020-10-29</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite-url/2020/04/17/Hexo-Theme-LiveMyLife/</loc>
+    <loc>http://localhost/hexo/2020/04/17/Hexo-Theme-LiveMyLife/</loc>
     
     <lastmod>2020-10-29</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite-url/404.html</loc>
+    <loc>http://localhost/hexo/404.html</loc>
     
     <lastmod>2020-10-29</lastmod>
     
@@ -66,65 +66,65 @@
   
 
   <url>
-    <loc>http://yoursite-url/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <loc>http://localhost/hexo</loc>
+    <lastmod>2021-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://yoursite-url/tags/computing/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <loc>http://localhost/hexo/tags/computing/</loc>
+    <lastmod>2021-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/Docker/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <loc>http://localhost/hexo/tags/health/</loc>
+    <lastmod>2021-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/Computing/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <loc>http://localhost/hexo/tags/peace/</loc>
+    <lastmod>2021-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/health/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <loc>http://localhost/hexo/tags/gardening/</loc>
+    <lastmod>2021-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/peace/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <loc>http://localhost/hexo/tags/Docker/</loc>
+    <lastmod>2021-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/gardening/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <loc>http://localhost/hexo/tags/Computing/</loc>
+    <lastmod>2021-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/Hexo/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <loc>http://localhost/hexo/tags/Hexo/</loc>
+    <lastmod>2021-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <loc>http://localhost/hexo/tags/Hexo-Theme-LiveMyLife/</loc>
+    <lastmod>2021-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -132,22 +132,22 @@
 
   
   <url>
-    <loc>http://yoursite-url/categories/health/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <loc>http://localhost/hexo/categories/health/</loc>
+    <lastmod>2021-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/categories/Computing/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <loc>http://localhost/hexo/categories/Computing/</loc>
+    <lastmod>2021-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite-url/categories/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <loc>http://localhost/hexo/categories/Hexo-Theme-LiveMyLife/</loc>
+    <lastmod>2021-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
