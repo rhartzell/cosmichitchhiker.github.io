@@ -2,56 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://rhartzell.github.io/about/index.html</loc>
+    <loc>https://blog.bozrod.com/about/index.html</loc>
     
     <lastmod>2021-02-20</lastmod>
     
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/404.html</loc>
+    <loc>https://blog.bozrod.com/404.html</loc>
     
     <lastmod>2021-02-20</lastmod>
     
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/2020/11/07/Docker/</loc>
+    <loc>https://blog.bozrod.com/2020/11/07/Docker/</loc>
     
     <lastmod>2021-02-20</lastmod>
     
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/2020/10/29/FindingPeace/</loc>
+    <loc>https://blog.bozrod.com/2020/10/29/FindingPeace/</loc>
     
     <lastmod>2021-02-20</lastmod>
     
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/2020/04/17/Hexo-Theme-LiveMyLife/</loc>
+    <loc>https://blog.bozrod.com/2020/04/17/Hexo-Theme-LiveMyLife/</loc>
     
     <lastmod>2021-02-20</lastmod>
     
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/tags/index.html</loc>
+    <loc>https://blog.bozrod.com/tags/index.html</loc>
     
     <lastmod>2020-10-29</lastmod>
     
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/categories/index.html</loc>
+    <loc>https://blog.bozrod.com/categories/index.html</loc>
     
     <lastmod>2020-10-29</lastmod>
     
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/archive/index.html</loc>
+    <loc>https://blog.bozrod.com/archive/index.html</loc>
     
     <lastmod>2020-10-29</lastmod>
     
@@ -59,58 +59,58 @@
   
 
   <url>
-    <loc>https://rhartzell.github.io/</loc>
-    <lastmod>2021-02-20</lastmod>
+    <loc>https://blog.bozrod.com/</loc>
+    <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://rhartzell.github.io/tags/health/</loc>
-    <lastmod>2021-02-20</lastmod>
+    <loc>https://blog.bozrod.com/tags/health/</loc>
+    <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/tags/peace/</loc>
-    <lastmod>2021-02-20</lastmod>
+    <loc>https://blog.bozrod.com/tags/peace/</loc>
+    <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/tags/gardening/</loc>
-    <lastmod>2021-02-20</lastmod>
+    <loc>https://blog.bozrod.com/tags/gardening/</loc>
+    <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/tags/Docker/</loc>
-    <lastmod>2021-02-20</lastmod>
+    <loc>https://blog.bozrod.com/tags/Docker/</loc>
+    <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/tags/Computing/</loc>
-    <lastmod>2021-02-20</lastmod>
+    <loc>https://blog.bozrod.com/tags/Computing/</loc>
+    <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/tags/Hexo/</loc>
-    <lastmod>2021-02-20</lastmod>
+    <loc>https://blog.bozrod.com/tags/Hexo/</loc>
+    <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/tags/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2021-02-20</lastmod>
+    <loc>https://blog.bozrod.com/tags/Hexo-Theme-LiveMyLife/</loc>
+    <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -118,22 +118,22 @@
 
   
   <url>
-    <loc>https://rhartzell.github.io/categories/health/</loc>
-    <lastmod>2021-02-20</lastmod>
+    <loc>https://blog.bozrod.com/categories/health/</loc>
+    <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/categories/Computing/</loc>
-    <lastmod>2021-02-20</lastmod>
+    <loc>https://blog.bozrod.com/categories/Computing/</loc>
+    <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://rhartzell.github.io/categories/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2021-02-20</lastmod>
+    <loc>https://blog.bozrod.com/categories/Hexo-Theme-LiveMyLife/</loc>
+    <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
